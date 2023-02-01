@@ -1,26 +1,55 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="top_container">
+    <img class="logo" src="./img/logo.png" alt="" />
+    <p class="name">KIND_KILLERWHALE</p>
+    <img class="logo2" src="./img/kuromi2.png" alt="" />
+  </div>
+
+  <Profile/>
+  <Projects/>
+  
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Profile from "./components/profile.vue"
+import Projects from "./components/projects.vue"
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "App",
+  components:{
+    Profile,
+    Projects,
   }
-}
+  };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  background-color: #fbdff0;
+  user-select: none;
+  height: 5000px;
+}
+
+.top_container {
+  background-color: black;
+  margin: -10px;
+  padding-top: 20px;
+  height: 400px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.name {
+  color: white;
+  font-family: "marvin-round", "sans-serif";
+  font-size: 35px;
+  margin: 20px;
+}
+
+.logo2{
+  width:150px;
 }
 </style>
